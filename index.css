@@ -128,6 +128,9 @@ a {
     text-align: center;
     /* position: relative; */
 }
+.about_info {
+    padding: 20px;
+}
 /* .about {
     width: 100%;
     height: 117.7vh;
@@ -167,8 +170,8 @@ a {
     /* border: 1px solid red; */
 }
 .invention_img {
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     margin: auto;
     background-size: cover;
     /* border: 1px solid black; */
@@ -178,10 +181,11 @@ a {
     height: 400px;
     font-size: 1rem;
     text-align: center;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px auto;
+    margin: 20px auto;
     /* border: 1px solid black; */
 }
 .img1 {
@@ -202,7 +206,8 @@ a {
         height: 300vh;
     }
     .invention_img {
-        width: 50%;
+        width: 750px;
+        height: 450px;
     }
     .invention_text {
         margin: auto;
