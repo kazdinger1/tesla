@@ -164,28 +164,28 @@ a {
 }
 .invention {
     width: 100%;
-    height: 23.9%;
+    height: 25%;
     position: relative;
     display: block;
     /* border: 1px solid red; */
 }
 .invention_img {
-    width: 400px;
+    width: 350px;
     height: 400px;
     margin: auto;
     background-size: cover;
     /* border: 1px solid black; */
 }
 .invention_text {
-    width: 450px;
-    height: 400px;
+    width: 400px;
+    height: 490px;
     font-size: 1rem;
     text-align: center;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
+    margin: auto;
     /* border: 1px solid black; */
 }
 .img1 {
@@ -210,6 +210,7 @@ a {
         height: 450px;
     }
     .invention_text {
+        width: 700px;
         margin: auto;
     }
     .invention {
