@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;500;700&family=Poppins:wght@300;500;600;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* body {
+    overflow-x: hidden;
+} */
+html {
+    font-family: 'Kanit';
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home {
+    background-image: url('img/tesla3.jpg');
+    background-size: cover;
+    position: top center;
+    position: relative;
+}
+#home .home {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+#home h1 {
+    font-weight: 400;
+    display: block;
+    width: fit-content;
+    font-size: 2rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+}
+#home h1:nth-child(1) {
+    animation-delay:  1s;
+}
+#home h1:nth-child(2) {
+    animation-delay:  2s;
+}
+#home h1:nth-child(3) {    
+    font-weight: 500;
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay:  3s;
+}
+#home h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: crimson;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+}
+#home h1:nth-child(1) span {
+    animation-delay:  0.5s;
+}
+#home h1:nth-child(2) span {
+    animation-delay:  1.5s;
+}
+#home h1:nth-child(3) span{
+    animation-delay:  2.5s;
+}
+#home .button {
+    display: inline-block;
+    color: crimson;
+    padding: 10px 30px;
+    font-size: 1rem;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border: 2px solid crimson;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+#home .button:hover {
+    color: white;
+    background-color: crimson;
+}
+
+
+/* KEYFRAMES */
+
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes text_reveal {
+    100% {
+        color: white;
+    }
+}
+@keyframes text_reveal_name {
+    100% {
+        color: crimson;
+    }
+}
+
+/* ABOUT */
+
+.header{
+    font-size: 4rem;
+}
+.header span {
+    color: crimson;
+}
+#about {
+    text-align: center;
+    /* position: relative; */
+}
+/* .about {
+    width: 100%;
+    height: 117.7vh;
+    position: relative;
+}
+.about_info {
+    z-index: 1;
+}
+.video {
+    width:auto;
+    height: 117.7vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    overflow: hidden;    
+    min-width: 100%; 
+    min-height: 100%;
+} */
+
+
+.inventions {
+    height: 500vh;
+    position: relative;
+}
+.invention_container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.invention {
+    width: 100%;
+    height: 23.9%;
+    position: relative;
+    display: block;
+    /* border: 1px solid red; */
+}
+.invention_img {
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    background-size: cover;
+    /* border: 1px solid black; */
+}
+.invention_text {
+    width: 450px;
+    height: 400px;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    /* border: 1px solid black; */
+}
+.img1 {
+    background-image: url('img/robotics2.jpg');
+}
+.img2 {
+    background-image: url('img/radio.jpg');
+}
+.img3 {
+    background-image: url('img/alternatingCurrent.jpg');
+}
+.img4 {
+    background-image: url('img/teslaCoil.jpg');
+}
+
+@media only screen and (min-width:1000px) {
+    .inventions {
+        height: 300vh;
+    }
+    .invention_img {
+        width: 50%;
+    }
+    .invention_text {
+        margin: auto;
+    }
+    .invention {
+        display: flex;
+    }
+
+}
