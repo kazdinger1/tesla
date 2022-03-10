@@ -119,7 +119,7 @@ a {
 /* ABOUT */
 
 .header{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .header span {
     color: crimson;
@@ -177,16 +177,15 @@ a {
     /* border: 1px solid black; */
 }
 .invention_text {
-    width: 400px;
-    height: 490px;
+    width: 350px;
+    height: 460px;
     font-size: 1rem;
     text-align: center;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    /* border: 1px solid black; */
+    margin: 10px auto;
 }
 .img1 {
     background-image: url('img/robotics2.jpg');
