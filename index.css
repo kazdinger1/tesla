@@ -153,7 +153,7 @@ a {
 
 
 .inventions {
-    height: 500vh;
+    height: 530vh;
     position: relative;
 }
 .invention_container {
@@ -167,7 +167,7 @@ a {
     height: 25%;
     position: relative;
     display: block;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 .invention_img {
     width: 350px;
