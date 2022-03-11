@@ -39,7 +39,7 @@ a {
     font-weight: 400;
     display: block;
     width: fit-content;
-    font-size: 2rem;
+    font-size: 1.5rem;
     position: relative;
     color: transparent;
     animation: text_reveal .5s ease forwards;
@@ -79,7 +79,7 @@ a {
     display: inline-block;
     color: crimson;
     padding: 10px 30px;
-    font-size: 1rem;
+    font-size: 0.7rem;
     margin-top: 30px;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -167,7 +167,7 @@ a {
     height: 25%;
     position: relative;
     display: block;
-    border: 1px solid red;
+
 }
 .invention_img {
     width: 350px;
@@ -215,5 +215,10 @@ a {
     .invention {
         display: flex;
     }
-
+    #home h1 {
+        font-size: 3rem;
+    }
+    #home .button {
+        font-size: 1.5rem;
+    }
 }
