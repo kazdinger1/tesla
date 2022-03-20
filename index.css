@@ -25,6 +25,7 @@ a {
 
 #home {
     background-image: url('img/tesla3.jpg');
+
     background-size: cover;
     position: top center;
     position: relative;
@@ -35,6 +36,40 @@ a {
     padding: 0 50px;
     justify-content: flex-start;
 }
+.navbar {
+    position: relative;
+    width: 100%;
+    height: 70px;    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    /* background-color: rgba(0, 0, 0, 0.137); */
+}
+.navbar ul {
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: flex; 
+    list-style-type: none;
+}
+.navbar ul li {
+    margin: 20px;
+    font-size: 1.5rem;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 500ms;
+}
+.navbar ul li a:hover{
+    text-decoration-color: rgba(255, 255, 255, 1);
+    
+}
+
 #home h1 {
     font-weight: 400;
     display: block;
@@ -62,7 +97,7 @@ a {
     left: 0;
     height: 100%;
     width: 0;
-    background-color: crimson;
+    background-color: rgb(255, 208, 0);
     animation: text_reveal_box 1s ease;
     animation-delay: 1s;
 }
@@ -77,19 +112,19 @@ a {
 }
 #home .button {
     display: inline-block;
-    color: crimson;
+    color: rgb(255, 208, 0);
     padding: 10px 30px;
     font-size: 0.7rem;
     margin-top: 30px;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    border: 2px solid crimson;
+    border: 2px solid rgb(255, 208, 0);
     transition: .3s ease;
     transition-property: background-color, color;
 }
 #home .button:hover {
-    color: white;
-    background-color: crimson;
+    color: black;
+    background-color: rgb(255, 208, 0);
 }
 
 
@@ -112,7 +147,7 @@ a {
 }
 @keyframes text_reveal_name {
     100% {
-        color: crimson;
+        color: rgb(255, 208, 0);
     }
 }
 
@@ -120,10 +155,16 @@ a {
 
 .header{
     font-size: 3rem;
+    background-color: rgb(255, 208, 0);
+    margin: 15px;
 }
 .header span {
-    color: crimson;
+    color: rgb(255, 255, 255);
 }
+.about {
+    height: 170vh;
+}
+
 #about {
     text-align: center;
     /* position: relative; */
@@ -131,34 +172,22 @@ a {
 .about_info {
     padding: 20px;
 }
-/* .about {
-    width: 100%;
-    height: 117.7vh;
-    position: relative;
+.about_img {
+    margin: 30px auto;
+    width: 400px;
+    height: 535px;
+    background-image: url('img/nikolaTesla.jpeg');
+    background-size: contain;
 }
-.about_info {
-    z-index: 1;
-}
-.video {
-    width:auto;
-    height: 117.7vh;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    background-size: cover;
-    overflow: hidden;    
-    min-width: 100%; 
-    min-height: 100%;
-} */
-
 
 .inventions {
-    height: 530vh;
+    height: 540vh;
     position: relative;
 }
 .invention_container {
     width: 100%;
     height: 100%;
+    padding: 20px;
     text-align: center;
     /* border: 1px solid black; */
 }
@@ -210,6 +239,7 @@ a {
     }
     .invention_text {
         width: 700px;
+        font-size: 2.7vh;
         margin: auto;
     }
     .invention {
@@ -220,5 +250,11 @@ a {
     }
     #home .button {
         font-size: 1.5rem;
+    }
+    .navbar {
+        display: flex;
+    }
+    .about {
+        height: initial;
     }
 }
