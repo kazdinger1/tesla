@@ -1,101 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
     <title>Nikola Tesla</title>
-</head>
-<body>
-    <section id = "home">
-        <div class = "navbar">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Inventions</a></li>
-                <li><a href="">Early Life</a></li>
-            </ul>
+  </head>
+  <body>
+    <div class="wrapper">
+    <div id="homeScroll"></div>
+    <section id="home">
+      <div class="overlay" >
+        <div class="navbar" id="navbar0">
+          <ul>
+            <li><a href="#homeScroll">Home</a></li>
+            <li><a href="#aboutScroll">About</a></li>
+            <li><a href="#inventionsScroll">Inventions</a></li>
+            <li><a href="#legacyScroll">Legacy</a></li>
+          </ul>
+        
         </div>
-        <div class = "navbarMobile">
+        
+        <div class="navbar" id="navbar1">
+          <span id="close" onclick="closeMenu()" class="material-symbols-outlined"> close </span>
+          <ul onclick="closeMenu()">
+            <li><a href="#homeScroll">Home</a></li>
+            <li><a href="#aboutScroll">About</a></li>
+            <li><a href="#inventionsScroll">Inventions</a></li>
+            <li><a href="#legacyScroll">Legacy</a></li>
+          </ul>
+          
+        </div>
+        <span id="show" onclick="showMenu()"class="material-symbols-outlined"> menu </span>
+        <div id="navbar">
+          <ul>
+            <li><a href="#homeScroll">Home</a></li>
+            <li><a href="#aboutScroll">About</a></li>
+            <li><a href="#inventionsScroll">Inventions</a></li>
+            <li><a href="#legacyScroll">Legacy</a></li>
+          </ul>
+        </div>
+        <div class="navbarMobile"></div>
 
+        <div class="container">
+          <div>
+            <h1>The Greatest Scientist <span></span></h1>
+            <h1>Of All Time <span></span></h1>
+            <h1>Nikola Tesla <span></span></h1>
+            <a href="#" type="button" class="button">Learn more</a>
+          </div>
+          <!-- <div class="home_image"></div> -->
         </div>
-        <div class="home container">
+      </div>
+    </section>
+    <span id="arrow" class="material-symbols-outlined" onclick="scrollUp()">
+      keyboard_double_arrow_up
+    </span>
 
-            <div>
-                <h1>The Greatest Scientist <span></span></h1>
-                <h1>Of All Time <span></span></h1>
-                <h1>Nikola Tesla <span></span></h1>
-                <a href="#" type="button" class="button">Learn more</a>
-            </div>
-        </div>
+    <div id="aboutScroll"></div>
+    <h1 class="header"><span>A</span>BOUT</h1>
+    <section id="about">
+      <div class="about_img"></div>
+      <p class="about_text">
+        Tesla je poreklom Srbin, rođen 10. jula 1856. godine u Smiljanu, mestu
+        koje je pripadalo tadašnjem Austrijskom carstvu. Studirao je
+        elektrotehniku u Gracu i Pragu. Godine 1884. odlazi u Sjedinjene
+        Američke Države gde kratko sarađuje s Tomasom Edisonom pre nego što im
+        se putevi razilaze. Nekoliko patenata, uključujući vlasništvo nad
+        motorom za naizmeničnu struju, prodao je Džordžu Vestinghausu.
+        Pronalasci su mu doneli znatnu količinu novca, čiju je većinu iskoristio
+        na finansiranje sopstvenih, kako uspešnih tako i neuspešnih, projekata.
+        Godine 1895. Tesla i Vestinghaus su na Nijagarinim vodopadima izgradili
+        prvu hidroelektranu na svetu. Početkom 20. veka Tesla otvara
+        laboratoriju pod nazivom Vordenklif na Long Ajlandu i tamo sprovodi neke
+        od svojih najambicioznijih eksperimenata. Njegovi najznačajniji izumi
+        su: polifazni sistem sa provodnicima koji prenose naizmeničnu struju,
+        obrtno magnetsko polje, sinhroni motor, asinhroni motor i Teslin
+        transformator. Umro je 7. januara 1943. godine u Njujorku gde je živeo
+        skoro 60 godina. Ali pronalasci koje je za sobom ostavio žive i dan
+        danas. O Teslinom životu i slavnim delima postoji nekoliko knjiga i
+        filmova, među kojima su dokumentarni filmovi Nikola Tesla, genije koji
+        je upalio svet i Tajna Nikole Tesle. Kristofer Nolan je takođe napravio
+        film o Tesli pod nazivom Prestiž, a godine 1994. u Njujorku je ugao 40.
+        ulice i 6. avenije, gde se nalazila Teslina laboratorija, dobio naziv
+        Ugao Nikole Tesle.
+      </p>
+
+      <!-- <video class="video" src="video/pattern.mp4" muted autoplay loop></video> -->
     </section>
 
-    <section id = "about">
-        <div class="about container">
-            <div class = "about_info">
-                <h1 class = "header"><span>A</span>BOUT</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p> 
-                <div class = "about_img">
+    <div id="inventionsScroll"></div>
+    <h1 class="header"><span>I</span>NVENTIONS</h1>
+    <section id="inventions">
+      <!-- <div class = "carousel">
 
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
-            </div>  
-            <!-- <video class="video" src="video/pattern.mp4" muted autoplay loop></video> -->
+      </div> -->
+      <div class="invention">
+        <div class="invention_img img1"></div>
+        <div class="invention_text">
+          <h2>ROBOTICS</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
         </div>
+      </div>
+      <div class="invention">
+        <div class="invention_text text2">
+          <h2>RADIO</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+        <div class="invention_img img2"></div>
+      </div>
+      <div class="invention">
+        <div class="invention_img img3"></div>
+        <div class="invention_text">
+          <h2>ALTERNATING CURRENT</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+      </div>
+      <div class="invention">
+        <div class="invention_text">
+          <h2>TESLA COIL</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+        <div class="invention_img img4"></div>
+      </div>
     </section>
 
-    <section id = "inventions">
-        <div class="inventions container">
-
-            <div class = "invention_container">
-                <h1 class = "header"><span>I</span>NVENTIONS</h1>
-                <div class = "invention">
-                    <div class = "invention_img img1">
-
-                    </div>
-                    <div class = "invention_text">
-                        <div>
-                            <h2>ROBOTICS</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class = "invention">
-                    <div class = "invention_img img2">
-
-                    </div>
-                    <div class = "invention_text text2">
-                        <div>
-                            <h2>RADIO</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class = "invention">
-                    <div class = "invention_img img3">
-
-                    </div>
-                    <div class = "invention_text">
-                        <div>
-                            <h2>ALTERNATING CURRENT</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class = "invention">
-                    <div class = "invention_img img4">
-
-                    </div>
-                    <div class = "invention_text">
-                        <div>
-                            <h2>TESLA COIL</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div id="legacyScroll"></div>
+    <h1 class="header"><span>L</span>EGACY</h1>
+    <section id="legacy">
+      <div class="legacy">
+        <div class="legacy_img img5"></div>
+        <div class="legacy_text">
+          <h2>July 10, 1856</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur.
+          </p>
         </div>
+      </div>
+      <div class="legacy">
+        <div class="legacy_img img6"></div>
+        <div class="legacy_text">
+          <h2>Childhood Dream</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+      </div>
+      <div class="legacy">
+        <div class="legacy_img img7"></div>
+        <div class="legacy_text">
+          <h2>Old Age</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+      </div>
     </section>
-</body>
+  </div>
+  </body>
 </html>
